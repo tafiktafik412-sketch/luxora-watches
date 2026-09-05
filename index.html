@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxora Watches - ساعات فاخرة بتصميم راقٍ">
+  <title>Luxora Watches | ساعات فاخرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    توصيل إلى جميع الولايات الجزائرية — الدفع عند الاستلام
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <button class="mobile-menu" id="mobileMenu">☰</button>
+
+      <a href="#home" class="logo">
+        LUXORA <span>Watches</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">الساعات</a>
+        <a href="#offers">العروض</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <button class="cart-button" id="openCart" aria-label="السلة">
+        🛒
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">LUXURY TIMEPIECES</p>
+        <h1>اكتشف ساعتك المثالية</h1>
+        <p class="hero-text">
+          ساعات فاخرة بتفاصيل استثنائية، صُممت لترافقك في كل لحظة وتمنح إطلالتك حضورًا لا يُنسى.
+        </p>
+        <a href="#products" class="btn btn-gold">تسوق الآن ←</a>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-grid">
+        <div class="benefit">
+          <span>✦</span>
+          <div>
+            <h3>جودة مضمونة</h3>
+            <p>منتجات مختارة بعناية</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <span>◈</span>
+          <div>
+            <h3>توصيل سريع</h3>
+            <p>إلى جميع الولايات</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <span>◇</span>
+          <div>
+            <h3>الدفع عند الاستلام</h3>
+            <p>ادفع بعد استلام طلبك</p>
+          </div>
+        </div>
+        <div class="benefit">
+          <span>↻</span>
+          <div>
+            <h3>إمكانية الاستبدال</h3>
+            <p>خدمة ما بعد البيع</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR COLLECTION</p>
+          <h2>مجموعة الساعات</h2>
+          <p>اختر ما يناسب ذوقك من مجموعتنا الفاخرة</p>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="search-box">
+            <input type="search" id="searchInput" placeholder="ابحث عن ساعة أو ماركة...">
+            <span>⌕</span>
+          </div>
+
+          <div class="filters">
+            <select id="categoryFilter">
+              <option value="all">كل الأقسام</option>
+              <option value="رجالية">ساعات رجالية</option>
+              <option value="نسائية">ساعات نسائية</option>
+              <option value="كلاسيكية">كلاسيكية</option>
+              <option value="رياضية">رياضية</option>
+              <option value="فاخرة">فاخرة</option>
+            </select>
+
+            <select id="sortFilter">
+              <option value="featured">الأكثر تميزًا</option>
+              <option value="low">السعر: الأقل أولًا</option>
+              <option value="high">السعر: الأعلى أولًا</option>
+              <option value="new">الأحدث</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+        <div class="empty-message hidden" id="emptyProducts">
+          لا توجد منتجات مطابقة لبحثك.
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-section" id="offers">
+      <div class="container offer-content">
+        <div>
+          <p class="eyebrow">LIMITED OFFER</p>
+          <h2>أناقة تستحقها</h2>
+          <p>استفد من التخفيضات الحصرية لفترة محدودة.</p>
+        </div>
+        <a href="#products" class="btn btn-gold">اكتشف العروض</a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85" alt="ساعة فاخرة">
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">ABOUT LUXORA</p>
+          <h2>الوقت بأسلوب مختلف</h2>
+          <p>
+            في Luxora Watches نؤمن أن الساعة ليست مجرد أداة لمعرفة الوقت، بل قطعة تعبّر عن شخصيتك وذوقك وطموحك.
+          </p>
+          <p>
+            نختار لك تصاميم أنيقة تجمع بين الجودة العالية، الدقة، والفخامة بأسعار مناسبة.
+          </p>
+          <a href="#contact" class="btn btn-dark">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo footer-logo">
+          LUXORA <span>Watches</span>
+        </a>
+        <p>
+          ساعات فاخرة بتفاصيل استثنائية، صُممت لترافقك في كل لحظة.
+        </p>
+      </div>
+
+      <div>
+        <h3>روابط سريعة</h3>
+        <a href="#home">الرئيسية</a>
+        <a href="#products">الساعات</a>
+        <a href="#offers">العروض</a>
+        <a href="#about">من نحن</a>
+      </div>
+
+      <div>
+        <h3>خدمة العملاء</h3>
+        <a href="#contact">تواصل معنا</a>
+        <a href="tel:0550000000">0550 000 000</a>
+        <a href="mailto:contact@luxora.dz">contact@luxora.dz</a>
+      </div>
+
+      <div>
+        <h3>تابعنا</h3>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2026 Luxora Watches — جميع الحقوق محفوظة
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>سلة المشتريات</h2>
+      <button id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      السلة فارغة حاليًا
+    </div>
+
+    <div class="cart-footer">
+      <div class="total-line">
+        <span>الإجمالي</span>
+        <strong id="cartTotal">0 دج</strong>
+      </div>
+      <button class="btn btn-gold full-width" id="checkoutButton">
+        إتمام الطلب
+      </button>
+    </div>
+  </aside>
+
+  <div class="modal-overlay hidden" id="checkoutModal">
+    <div class="modal">
+      <button class="modal-close" id="closeCheckout">×</button>
+
+      <div id="checkoutFormWrapper">
+        <div class="section-heading modal-heading">
+          <p class="eyebrow">ORDER NOW</p>
+          <h2>إتمام الطلب</h2>
+          <p>الدفع عند الاستلام</p>
+        </div>
+
+        <form id="checkoutForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="customerName">الاسم الكامل *</label>
+              <input id="customerName" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="customerPhone">رقم الهاتف *</label>
+              <input id="customerPhone" name="phone" type="tel" required>
+            </div>
+
+            <div class="form-group">
+              <label for="wilaya">الولاية *</label>
+              <input id="wilaya" name="wilaya" required>
+            </div>
+
+            <div class="form-group">
+              <label for="commune">البلدية *</label>
+              <input id="commune" name="commune" required>
+            </div>
+
+            <div class="form-group full">
+              <label for="address">العنوان بالتفصيل *</label>
+              <input id="address" name="address" required>
+            </div>
+
+            <div class="form-group full">
+              <label for="notes">ملاحظات إضافية</label>
+              <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="payment-info">
+            <span>طريقة الدفع</span>
+            <strong>الدفع عند الاستلام</strong>
+          </div>
+
+          <button class="btn btn-gold full-width" type="submit">
+            تأكيد الطلب
+          </button>
+        </form>
+      </div>
+
+      <div class="success-message hidden" id="successMessage">
+        <div class="success-icon">✓</div>
+        <h2>تم إرسال طلبك بنجاح</h2>
+        <p>سنتواصل معك قريبًا لتأكيد طلبك.</p>
+        <div class="order-number" id="orderNumber"></div>
+        <div id="orderSummary"></div>
+        <button class="btn btn-dark" id="continueShopping">متابعة التسوق</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
